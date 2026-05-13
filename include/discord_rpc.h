@@ -26,6 +26,10 @@ extern "C" {
 typedef struct DiscordRichPresence {
     const char* state;   /* max 128 bytes */
     const char* details; /* max 128 bytes */
+    const char* button1Label;
+    const char* button1Url;
+    const char* button2Label;
+    const char* button2Url;
     int64_t startTimestamp;
     int64_t endTimestamp;
     const char* largeImageKey;  /* max 32 bytes */
